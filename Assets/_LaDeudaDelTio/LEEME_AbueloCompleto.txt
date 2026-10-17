@@ -1,0 +1,34 @@
+LA DEUDA DEL TIO - ABUELO CHAMAN
+Complemento para Unity 6.5 - No modifica los archivos originales de SpriteCook.
+
+REQUISITO
+Ya deben aparecer 9 animaciones en Assets/SpriteCook/Animations/PixelArt.
+
+PASOS
+1. Guarda 01_Pueblo (Ctrl+S) y crea un commit de respaldo en GitHub Desktop.
+2. Importa el complemento Yatiri_Controles_Listos.unitypackage.
+3. Espera a que Unity compile, abre 01_Pueblo.
+4. Ve a Tools > La Deuda del Tio > 1 - Preparar animaciones y prefab.
+5. Ve a Tools > La Deuda del Tio > 2 - Poner abuelo en escena actual.
+6. Guarda Ctrl+S y prueba Play (haz clic dentro de Game para enviar las teclas).
+
+CONTROLES
+A/D o flechas: caminar / girar.
+Shift: correr.
+Espacio: saltar.
+Ctrl o S / flecha abajo: agacharse. Al soltar vuelve a ponerse de pie si hay espacio.
+K: magia espiritual (proyectil de prueba).
+J: cuchillo (desbloqueo narrativo; desactivado al principio).
+Para probar J, marca Cuchillo Desbloqueado en el Inspector del AbueloChaman_Jugable.
+B: recibir dano (SOLO en pruebas dentro del Editor).
+N: morir (SOLO en pruebas dentro del Editor).
+
+IMPORTANTE
+El prefab original Assets/SpriteCook/Prefabs/Player.prefab permanece intacto.
+El sistema crea o actualiza la copia del controlador que ya hiciste: Assets/_LaDeudaDelTio/Animations/AbueloChaman_Completo.controller.
+Se crea el nuevo prefab Assets/_LaDeudaDelTio/Prefabs/AbueloChaman_Jugable.prefab.
+Desactiva el Player anterior en 01_Pueblo, pero NO lo borra.
+Los efectos graficos del hechizo son PROVISIONALES. Los enemigos necesitaran dano/vida propios; se adjunta YatiriObjetivo para pruebas basicas.
+No se incluye bicicleta, vagoneta ni pijchar coca: se haran luego como sistemas separados.
+No se modifican las escenas automaticamente al importar; solo despues de elegir la opcion 2 del menu.
+Si Unity muestra errores rojos de compilacion, abre Console y revisalos antes de ejecutar el asistente.
