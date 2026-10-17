@@ -1,0 +1,37 @@
+LA DEUDA DEL TIO — PUEBLO 10 SECTORES — PREPARACION RAPIDA
+
+IMPORTANTE: Este parche NO reemplaza los archivos existentes del proyecto.
+NO ES UN .unitypackage: es un ZIP con 10 PNG y DOS scripts nuevos.
+
+1. Deten Play en Unity, guarda 01_Pueblo (Ctrl+S) y cierra Unity.
+2. En GitHub Desktop, asegúrate de haber hecho commit y push.
+3. Extrae el contenido de este ZIP en D:\LaDeudaDelTio (la raiz, NO dentro de Assets).
+   Si Windows pide REEMPLAZAR archivos, CANCELA y consulta.
+4. Abre Unity y espera que compile; Console sin errores rojos de C#.
+5. Menu superior: Tools > La Deuda del Tio > ARMAR PUEBLO - 10 sectores (copia segura).
+6. Pulsa "Armar copia". Se generara y abrira automaticamente una escena nueva
+   01_Pueblo_Armado.unity (o un nombre con numero, si ya existe).
+7. Play; camina con A / D. En el extremo de un sector ocurre una transicion
+   oscura corta y comienza el siguiente sector. Retrocede para volver.
+
+CAMBIOS AUTOMATICOS (SOLO EN LA COPIA):
+- Diez fondos visuales en una sola escena; solo uno visible a la vez.
+- Piso de prueba se hace invisible pero mantiene BoxCollider2D.
+- El abuelo existente se usa tal cual, pero con una escala y posicion de prueba.
+- Sigue funcionando A/D, Shift, Espacio y J si tu Player ya tiene el script.
+- Camara sigue y respeta el limite horizontal de cada sector.
+- Run Speed 6, Jump Force 9.5; se puede ajustar en Inspector.
+- La nueva escena se coloca primera en Build Settings.
+
+NO HACE TODAVIA:
+- Las ilustraciones originales NO fueron alteradas ni redibujadas.
+- No hay conexion visual perfecta sin transiciones; el fundido oculta el corte.
+- No hay enemigos ni daño real, NPC, sonido, ni secuencia E del cerro.
+- No se modifica Loop Time de Attack/Death: arreglar posteriormente.
+- El suelo de prueba es plano; debe ajustarse por sector mas adelante.
+
+SEGURIDAD:
+01_Pueblo.unity original queda intacto. El prefab y los scripts originales
+SpriteCook quedan intactos. La herramienta trabaja en una COPIA de escena.
+Si falla la compilacion o un mensaje rojo de Unity, NO borres archivos:
+manda el mensaje de Console para repararlo.

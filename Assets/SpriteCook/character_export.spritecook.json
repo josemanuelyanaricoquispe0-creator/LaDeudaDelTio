@@ -57,8 +57,8 @@
     },
     {
       "state": "Attack",
-      "clipPath": "Assets/SpriteCook/Animations/PixelArt/Hoja_de_sprites_del_cham_n_andino_idle.anim",
-      "texturePath": "Assets/SpriteCook/Textures/PixelArt/Hoja_de_sprites_del_cham_n_andino_idle.png"
+      "clipPath": "Assets/SpriteCook/Animations/PixelArt/Hoja_de_sprites_del_cham_n_andino_attack.anim",
+      "texturePath": "Assets/SpriteCook/Textures/PixelArt/Hoja_de_sprites_del_cham_n_andino_attack.png"
     },
     {
       "state": "Hurt",
