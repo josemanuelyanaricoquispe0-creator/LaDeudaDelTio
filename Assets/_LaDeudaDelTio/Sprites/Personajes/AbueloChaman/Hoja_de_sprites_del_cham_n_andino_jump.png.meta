@@ -1,0 +1,325 @@
+fileFormatVersion: 2
+guid: b853e08a1e75e1142b5830ce813abf01
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1189261942681604161
+    second: Hoja_de_sprites_del_cham_n_andino_jump_0
+  - first:
+      213: -1450168857258653455
+    second: Hoja_de_sprites_del_cham_n_andino_jump_1
+  - first:
+      213: 7743387897392468494
+    second: Hoja_de_sprites_del_cham_n_andino_jump_2
+  - first:
+      213: -993646119440951720
+    second: Hoja_de_sprites_del_cham_n_andino_jump_3
+  - first:
+      213: 1907897660777748531
+    second: Hoja_de_sprites_del_cham_n_andino_jump_4
+  - first:
+      213: -2278332061263311228
+    second: Hoja_de_sprites_del_cham_n_andino_jump_5
+  - first:
+      213: -3538714166657055879
+    second: Hoja_de_sprites_del_cham_n_andino_jump_6
+  - first:
+      213: -8502771102436191649
+    second: Hoja_de_sprites_del_cham_n_andino_jump_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hoja_de_sprites_del_cham_n_andino_jump_0
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 20
+        width: 378
+        height: 584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1409d669f6b118010800000000000000
+      internalID: 1189261942681604161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja_de_sprites_del_cham_n_andino_jump_1
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 20
+        width: 394
+        height: 555
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f883ce8b17ffdbe0800000000000000
+      internalID: -1450168857258653455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja_de_sprites_del_cham_n_andino_jump_2
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 20
+        width: 462
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e021326344a067b60800000000000000
+      internalID: 7743387897392468494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja_de_sprites_del_cham_n_andino_jump_3
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 24
+        width: 494
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 856d6427e1cd532f0800000000000000
+      internalID: -993646119440951720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja_de_sprites_del_cham_n_andino_jump_4
+      rect:
+        serializedVersion: 2
+        x: 2579
+        y: 141
+        width: 583
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 338d47260d63a7a10800000000000000
+      internalID: 1907897660777748531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja_de_sprites_del_cham_n_andino_jump_5
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 98
+        width: 568
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e4408bf0db160e0800000000000000
+      internalID: -2278332061263311228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja_de_sprites_del_cham_n_andino_jump_6
+      rect:
+        serializedVersion: 2
+        x: 3880
+        y: 21
+        width: 539
+        height: 519
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97383ced636f3eec0800000000000000
+      internalID: -3538714166657055879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja_de_sprites_del_cham_n_andino_jump_7
+      rect:
+        serializedVersion: 2
+        x: 4527
+        y: 20
+        width: 489
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5295d06bb6100a80800000000000000
+      internalID: -8502771102436191649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Hoja_de_sprites_del_cham_n_andino_jump_0: 1189261942681604161
+      Hoja_de_sprites_del_cham_n_andino_jump_1: -1450168857258653455
+      Hoja_de_sprites_del_cham_n_andino_jump_2: 7743387897392468494
+      Hoja_de_sprites_del_cham_n_andino_jump_3: -993646119440951720
+      Hoja_de_sprites_del_cham_n_andino_jump_4: 1907897660777748531
+      Hoja_de_sprites_del_cham_n_andino_jump_5: -2278332061263311228
+      Hoja_de_sprites_del_cham_n_andino_jump_6: -3538714166657055879
+      Hoja_de_sprites_del_cham_n_andino_jump_7: -8502771102436191649
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

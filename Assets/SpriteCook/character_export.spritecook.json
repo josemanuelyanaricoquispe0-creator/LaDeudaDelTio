@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "sourceCharacterName": "Hoja_de_sprites_del_chamán_andino",
+  "perspective": "platformer",
+  "controllerMode": "platformer2d",
+  "idleClipPath": "Assets/SpriteCook/Animations/PixelArt/Hoja_de_sprites_del_cham_n_andino_idle.anim",
+  "idleTexturePath": "Assets/SpriteCook/Textures/PixelArt/Hoja_de_sprites_del_cham_n_andino_idle.png",
+  "walkClipPath": "Assets/SpriteCook/Animations/PixelArt/Hoja_de_sprites_del_cham_n_andino_front_walk_walk.anim",
+  "runClipPath": "Assets/SpriteCook/Animations/PixelArt/Hoja_de_sprites_del_cham_n_andino_front_run_run.anim",
+  "jumpClipPath": "Assets/SpriteCook/Animations/PixelArt/Hoja_de_sprites_del_cham_n_andino_jump.anim",
+  "fallClipPath": "Assets/SpriteCook/Animations/PixelArt/Hoja_de_sprites_del_cham_n_andino_jump.anim",
+  "directionalAnimations": [
+    {
+      "state": "IdleDown",
+      "clipPath": "Assets/SpriteCook/Animations/PixelArt/Hoja_de_sprites_del_cham_n_andino_idle.anim",
+      "texturePath": "Assets/SpriteCook/Textures/PixelArt/Hoja_de_sprites_del_cham_n_andino_idle.png"
+    },
+    {
+      "state": "IdleUp",
+      "clipPath": "Assets/SpriteCook/Animations/PixelArt/Hoja_de_sprites_del_cham_n_andino_idle.anim",
+      "texturePath": "Assets/SpriteCook/Textures/PixelArt/Hoja_de_sprites_del_cham_n_andino_idle.png"
+    },
+    {
+      "state": "IdleRight",
+      "clipPath": "Assets/SpriteCook/Animations/PixelArt/Hoja_de_sprites_del_cham_n_andino_idle.anim",
+      "texturePath": "Assets/SpriteCook/Textures/PixelArt/Hoja_de_sprites_del_cham_n_andino_idle.png"
+    },
+    {
+      "state": "WalkDown",
+      "clipPath": "Assets/SpriteCook/Animations/PixelArt/Hoja_de_sprites_del_cham_n_andino_idle.anim",
+      "texturePath": "Assets/SpriteCook/Textures/PixelArt/Hoja_de_sprites_del_cham_n_andino_idle.png"
+    },
+    {
+      "state": "WalkUp",
+      "clipPath": "Assets/SpriteCook/Animations/PixelArt/Hoja_de_sprites_del_cham_n_andino_idle.anim",
+      "texturePath": "Assets/SpriteCook/Textures/PixelArt/Hoja_de_sprites_del_cham_n_andino_idle.png"
+    },
+    {
+      "state": "WalkRight",
+      "clipPath": "Assets/SpriteCook/Animations/PixelArt/Hoja_de_sprites_del_cham_n_andino_idle.anim",
+      "texturePath": "Assets/SpriteCook/Textures/PixelArt/Hoja_de_sprites_del_cham_n_andino_idle.png"
+    },
+    {
+      "state": "RunDown",
+      "clipPath": "Assets/SpriteCook/Animations/PixelArt/Hoja_de_sprites_del_cham_n_andino_idle.anim",
+      "texturePath": "Assets/SpriteCook/Textures/PixelArt/Hoja_de_sprites_del_cham_n_andino_idle.png"
+    },
+    {
+      "state": "RunUp",
+      "clipPath": "Assets/SpriteCook/Animations/PixelArt/Hoja_de_sprites_del_cham_n_andino_idle.anim",
+      "texturePath": "Assets/SpriteCook/Textures/PixelArt/Hoja_de_sprites_del_cham_n_andino_idle.png"
+    },
+    {
+      "state": "RunRight",
+      "clipPath": "Assets/SpriteCook/Animations/PixelArt/Hoja_de_sprites_del_cham_n_andino_idle.anim",
+      "texturePath": "Assets/SpriteCook/Textures/PixelArt/Hoja_de_sprites_del_cham_n_andino_idle.png"
+    },
+    {
+      "state": "Attack",
+      "clipPath": "Assets/SpriteCook/Animations/PixelArt/Hoja_de_sprites_del_cham_n_andino_idle.anim",
+      "texturePath": "Assets/SpriteCook/Textures/PixelArt/Hoja_de_sprites_del_cham_n_andino_idle.png"
+    },
+    {
+      "state": "Hurt",
+      "clipPath": "Assets/SpriteCook/Animations/PixelArt/Hoja_de_sprites_del_cham_n_andino_hurt.anim",
+      "texturePath": "Assets/SpriteCook/Textures/PixelArt/Hoja_de_sprites_del_cham_n_andino_hurt.png"
+    },
+    {
+      "state": "Death",
+      "clipPath": "Assets/SpriteCook/Animations/PixelArt/Hoja_de_sprites_del_cham_n_andino_death.anim",
+      "texturePath": "Assets/SpriteCook/Textures/PixelArt/Hoja_de_sprites_del_cham_n_andino_death.png"
+    }
+  ]
+}
