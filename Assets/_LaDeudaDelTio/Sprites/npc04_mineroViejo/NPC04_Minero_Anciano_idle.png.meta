@@ -1,0 +1,325 @@
+fileFormatVersion: 2
+guid: 3d07e5f0863c00a45b26fe141971053d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9165823176763188832
+    second: NPC04_Minero_Anciano_idle_0
+  - first:
+      213: 2205429909383740037
+    second: NPC04_Minero_Anciano_idle_1
+  - first:
+      213: -2757177181692077598
+    second: NPC04_Minero_Anciano_idle_2
+  - first:
+      213: 6152294334240536363
+    second: NPC04_Minero_Anciano_idle_3
+  - first:
+      213: -4072119199356005168
+    second: NPC04_Minero_Anciano_idle_4
+  - first:
+      213: -6918070962985209112
+    second: NPC04_Minero_Anciano_idle_5
+  - first:
+      213: -1650200810757531304
+    second: NPC04_Minero_Anciano_idle_6
+  - first:
+      213: 5894371638862035319
+    second: NPC04_Minero_Anciano_idle_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NPC04_Minero_Anciano_idle_0
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 18
+        width: 432
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 066230ddd9b833f70800000000000000
+      internalID: 9165823176763188832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC04_Minero_Anciano_idle_1
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 18
+        width: 432
+        height: 593
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58af6d551d24b9e10800000000000000
+      internalID: 2205429909383740037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC04_Minero_Anciano_idle_2
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 18
+        width: 433
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e95e6e16f98cb9d0800000000000000
+      internalID: -2757177181692077598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC04_Minero_Anciano_idle_3
+      rect:
+        serializedVersion: 2
+        x: 2023
+        y: 18
+        width: 433
+        height: 596
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b273e0ac917516550800000000000000
+      internalID: 6152294334240536363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC04_Minero_Anciano_idle_4
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 18
+        width: 433
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d45657c92dec77c0800000000000000
+      internalID: -4072119199356005168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC04_Minero_Anciano_idle_5
+      rect:
+        serializedVersion: 2
+        x: 3304
+        y: 18
+        width: 432
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e27258dc131eff90800000000000000
+      internalID: -6918070962985209112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC04_Minero_Anciano_idle_6
+      rect:
+        serializedVersion: 2
+        x: 3944
+        y: 18
+        width: 432
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8595cb21b1f4919e0800000000000000
+      internalID: -1650200810757531304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC04_Minero_Anciano_idle_7
+      rect:
+        serializedVersion: 2
+        x: 4584
+        y: 18
+        width: 432
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 779328c96c30dc150800000000000000
+      internalID: 5894371638862035319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      NPC04_Minero_Anciano_idle_0: 9165823176763188832
+      NPC04_Minero_Anciano_idle_1: 2205429909383740037
+      NPC04_Minero_Anciano_idle_2: -2757177181692077598
+      NPC04_Minero_Anciano_idle_3: 6152294334240536363
+      NPC04_Minero_Anciano_idle_4: -4072119199356005168
+      NPC04_Minero_Anciano_idle_5: -6918070962985209112
+      NPC04_Minero_Anciano_idle_6: -1650200810757531304
+      NPC04_Minero_Anciano_idle_7: 5894371638862035319
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
