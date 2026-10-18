@@ -1,0 +1,185 @@
+{
+  "sourcePackage": "AbueloBici(1).unitypackage",
+  "sourceIncludesPrefabControllerClips": false,
+  "textures": [
+    {
+      "sourcePath": "Assets/SpriteCook/Textures/PixelArt/playerBicicleta_idle.png",
+      "sourceGuid": "3120ba97ef103e7c7e64039ed40905da",
+      "path": "Assets/_LaDeudaDelTio/Bicicleta/Textures/LDLT_Bici_Reposo.png",
+      "newGuid": "171aa013c1ce4b27a4038cb142d7df33",
+      "sha256OriginalAndOutput": "fda3715a622088520a08eb2ef379177cb1194770d06f46b55bfc2efc67fa1f2c",
+      "width": 5120,
+      "height": 640,
+      "frames": 8,
+      "frameWidth": 640,
+      "frameHeight": 640,
+      "fps": 8,
+      "pivot": [
+        0.5,
+        0
+      ],
+      "pixelsPerUnit": 100
+    },
+    {
+      "sourcePath": "Assets/SpriteCook/Textures/PixelArt/playerBicicleta_front_walk_walk.png",
+      "sourceGuid": "f486fa4e32553164e8248a8e6606c10d",
+      "path": "Assets/_LaDeudaDelTio/Bicicleta/Textures/LDLT_Bici_Pedalear.png",
+      "newGuid": "e487de66c50d459d944d6a91c715ae25",
+      "sha256OriginalAndOutput": "da9a09616057fbebb8d6590069e397a7bdb1918e7a035bbdbdd96034f09531d0",
+      "width": 5120,
+      "height": 640,
+      "frames": 8,
+      "frameWidth": 640,
+      "frameHeight": 640,
+      "fps": 8,
+      "pivot": [
+        0.5,
+        0
+      ],
+      "pixelsPerUnit": 100
+    },
+    {
+      "sourcePath": "Assets/SpriteCook/Textures/PixelArt/playerBicicleta_jump.png",
+      "sourceGuid": "1da047e6b602d69aa069533e8aa21bdf",
+      "path": "Assets/_LaDeudaDelTio/Bicicleta/Textures/LDLT_Bici_Saltar.png",
+      "newGuid": "ae9e7a7fc59a40a5ac84d0c3a28d38e5",
+      "sha256OriginalAndOutput": "1a77ab2914bec3a49a6dae3671837fee7f8fe514a7051a21acb9fadc38a64da5",
+      "width": 5120,
+      "height": 640,
+      "frames": 8,
+      "frameWidth": 640,
+      "frameHeight": 640,
+      "fps": 8,
+      "pivot": [
+        0.5,
+        0
+      ],
+      "pixelsPerUnit": 100
+    }
+  ],
+  "excluded": [
+    {
+      "guid": "1ac4160bda690f7bcdd2a04b232c4554",
+      "path": "Assets/SpriteCook/Editor/SpriteCookAtlasCreator.cs"
+    },
+    {
+      "guid": "1e11e50079816363154a58c19bcb45c3",
+      "path": "Assets/SpriteCook/Textures/PixelArt/playerBicicleta_front_walk_walk.spritecook.json"
+    },
+    {
+      "guid": "1e9cff41ed5043e88f4763aefcbc7c7a",
+      "path": "Assets/SpriteCook/Textures/PixelArt/playerBicicleta_jump.spritecook.json"
+    },
+    {
+      "guid": "3007bbbdc20a74dab6565ddd46240102",
+      "path": "Assets/SpriteCook/Editor"
+    },
+    {
+      "guid": "33dc3e24d2dfe72a98876d388cb2e3ac",
+      "path": "Assets/SpriteCook/Editor/SpriteCookImporter.cs"
+    },
+    {
+      "guid": "404c513c603032f318475d9a0753eb71",
+      "path": "Assets/SpriteCook/Editor/SpriteCookPrefabGenerator.cs"
+    },
+    {
+      "guid": "7aad2c24bf0fa64fafd9ee418a4860cd",
+      "path": "Assets/SpriteCook/Scripts/SpriteCookPlayerMovement.cs"
+    },
+    {
+      "guid": "7af87f1efc43524afe3e931cc2a52949",
+      "path": "Assets/SpriteCook/character_export.spritecook.json"
+    },
+    {
+      "guid": "87cde8391f6dbbdcf1c50f37da2b35d5",
+      "path": "Assets/SpriteCook/Textures/PixelArt/playerBicicleta_idle.spritecook.json"
+    },
+    {
+      "guid": "92fbc009c5dd3316d73f6b6395a702ba",
+      "path": "Assets/SpriteCook/Textures"
+    },
+    {
+      "guid": "ad1d6bb163fd7ca6f2438b81b2b3e11e",
+      "path": "Assets/SpriteCook/PixelArtImportSettings.preset"
+    },
+    {
+      "guid": "b1687fd22801923187c27ec8867e0838",
+      "path": "Assets/SpriteCook/Editor/SpriteCookCharacterSetup.cs"
+    },
+    {
+      "guid": "c1d1bde7e3ca510807179d38e3bea478",
+      "path": "Assets/SpriteCook/Prefabs"
+    },
+    {
+      "guid": "c9e8956a121ccb205693ba5cdc262a6f",
+      "path": "Assets/SpriteCook"
+    },
+    {
+      "guid": "cf3f01168aa8b7b4b7791d9453fa91cf",
+      "path": "Assets/SpriteCook/Scripts/SpriteCookTopdownMovement.cs"
+    },
+    {
+      "guid": "d9198427ec80ab20578da2305ad0976b",
+      "path": "Assets/SpriteCook/Textures/PixelArt"
+    },
+    {
+      "guid": "e73b67a6b024b732120c39db9f33892d",
+      "path": "Assets/SpriteCook/Scripts/SpriteCookAnimationController.cs"
+    },
+    {
+      "guid": "ec9a60711d9f0b58f7faf483285b65d7",
+      "path": "Assets/SpriteCook/Scripts"
+    },
+    {
+      "guid": "f5f816ea272ad190513a7158e3ee408e",
+      "path": "Assets/SpriteCook/Scenes"
+    },
+    {
+      "guid": "fc576c39c74b80b4a6d7c33ab37784a8",
+      "path": "Assets/SpriteCook/Controllers"
+    }
+  ],
+  "newResources": {
+    "Assets/_LaDeudaDelTio/Bicicleta": "730a4e6614554a2e985c90ac4e0a0f32",
+    "Assets/_LaDeudaDelTio/Bicicleta/Textures": "4066fa25c8fc493ea5884b7bdf933f5c",
+    "Assets/_LaDeudaDelTio/Bicicleta/Animations": "dab85fc60b5e4624b85d50e37f239305",
+    "Assets/_LaDeudaDelTio/Bicicleta/Controllers": "53e7dadcd4324a5b868306238853f7fd",
+    "Assets/_LaDeudaDelTio/Bicicleta/Prefabs": "66264ad6021a4df6acea7a7c31ad439d",
+    "Assets/_LaDeudaDelTio/Bicicleta/Scripts": "ec592ea551ea488585d8d5e9ad342611",
+    "Assets/_LaDeudaDelTio/Bicicleta/Editor": "c4153f2faace44be8cecd6392e4d964c",
+    "Assets/_LaDeudaDelTio/Bicicleta/Documentation": "3abbf9f53ffb4266828bec426324f8ac",
+    "Assets/_LaDeudaDelTio/Bicicleta/Textures/LDLT_Bici_Reposo.png": "171aa013c1ce4b27a4038cb142d7df33",
+    "Assets/_LaDeudaDelTio/Bicicleta/Animations/LDLT_AbueloBicicleta_Reposo.anim": "c67b7abff7694af7976a07a5dbc22a12",
+    "Assets/_LaDeudaDelTio/Bicicleta/Textures/LDLT_Bici_Pedalear.png": "e487de66c50d459d944d6a91c715ae25",
+    "Assets/_LaDeudaDelTio/Bicicleta/Animations/LDLT_AbueloBicicleta_Pedalear.anim": "1484d9d75c5740da9da7e146e89b59a2",
+    "Assets/_LaDeudaDelTio/Bicicleta/Textures/LDLT_Bici_Saltar.png": "ae9e7a7fc59a40a5ac84d0c3a28d38e5",
+    "Assets/_LaDeudaDelTio/Bicicleta/Animations/LDLT_AbueloBicicleta_Saltar.anim": "a69975b1baf24309a22df504ec460f92",
+    "Assets/_LaDeudaDelTio/Bicicleta/Controllers/LDLT_AbueloBicicleta.controller": "77bebd2a357a46008fecbbea1e774747",
+    "Assets/_LaDeudaDelTio/Bicicleta/Scripts/LDLT_BicicletaMovimiento.cs": "8cdfe4410e8740bc8cb8ee2b5f9480ef",
+    "Assets/_LaDeudaDelTio/Bicicleta/Editor/LDLT_BicicletaValidacion.cs": "424a142c315b4f8f9d526fb6659d2fe2",
+    "Assets/_LaDeudaDelTio/Bicicleta/Prefabs/LDLT_AbueloBicicleta.prefab": "4bfcfafe8b6249129845b959e6b778c2"
+  },
+  "validation": {
+    "unityEditorExecuted": false,
+    "archiveAndGuidReferencesChecked": true,
+    "imageBytesPreserved": true,
+    "states": [
+      "Reposo",
+      "Pedalear",
+      "Saltar"
+    ],
+    "transitionCount": 6,
+    "keyframeTimes": [
+      0.0,
+      0.125,
+      0.25,
+      0.375,
+      0.5,
+      0.625,
+      0.75,
+      0.875
+    ],
+    "loopTime": true,
+    "lastKeyframeAndStopTime": 0.875
+  }
+}

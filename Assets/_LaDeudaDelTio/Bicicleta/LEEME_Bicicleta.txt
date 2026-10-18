@@ -1,0 +1,75 @@
+LA DEUDA DEL TÍO — ABUELO BICICLETA
+Paquete independiente preparado para Unity 6.5 (6000.5).
+
+IMPORTAR
+1. En el proyecto abierto: Assets > Import Package > Custom Package.
+2. Elige LDLT_AbueloBicicleta_Unity6_5.unitypackage y pulsa Import.
+3. Espera a que Unity termine de importar y compilar.
+4. Abre Assets/_LaDeudaDelTio/Bicicleta/Prefabs y arrastra
+   LDLT_AbueloBicicleta.prefab a tu escena, sobre un suelo con Collider2D.
+5. A/D o flechas: pedalear. Shift: aumentar velocidad. Espacio: saltar.
+   Reposo cuando se detiene; Saltar mientras está en el aire.
+
+NO ES EL PAQUETE ORIGINAL
+El archivo recibido NO contenía clips .anim, prefab ni controller: sólo
+3 hojas PNG, metadatos y generadores de SpriteCook. Se crearon los recursos
+faltantes a partir de esos datos, sin importar los generadores generales.
+Las 3 imágenes PNG están conservadas byte por byte. No se redibujó nada.
+Cada hoja tiene 8 cuadros de 640 x 640, orden izquierda a derecha, 8 FPS,
+pivote inferior central, 100 píxeles por unidad y bucle, igual que el
+algoritmo del importador original. Claves en 0, 0.125, ..., 0.875 segundos.
+También Saltar mantiene el bucle del importador original.
+Max Size = 8192 para que Unity conserve los 5120 píxeles de cada hoja.
+
+AISLAMIENTO
+Todo está dentro de Assets/_LaDeudaDelTio/Bicicleta/.
+Todos los recursos tienen GUID nuevos. También son nuevos los identificadores
+de sprites. Las curvas, tablas de sprites, controller y prefab usan esos GUID.
+No se incluye ningún archivo de Assets/SpriteCook, ningún Player.prefab,
+ningún Character.controller ni scripts generales SpriteCook.
+No se incluyen metadatos de Assets ni de la carpeta padre _LaDeudaDelTio,
+para no asignarles otro GUID si ya existen en tu proyecto.
+No se añaden escenas, cámaras, tags, capas o cambios a ProjectSettings.
+
+SCRIPTS
+LDLT_BicicletaMovimiento es exclusivo de la bicicleta y tiene namespace
+LaDeudaDelTio.Bicicleta. No depende de scripts SpriteCook. Admite el sistema
+de entrada nuevo o el antiguo según la configuración existente del proyecto.
+El script de Editor sólo agrega una validación manual: no ejecuta generadores
+al importar, no abre ni guarda escenas y no modifica tus personajes.
+
+PRUEBA EN TU UNITY
+Tools > La Deuda del Tio > Bicicleta > Validar paquete.
+Busca en Console el mensaje: [LDLT Bicicleta] OK.
+La validación carga 24 sprites, revisa sus recortes, pivotes y referencias,
+muestrea las curvas de animación y comprueba el controller y el prefab.
+Después prueba en Play sobre un suelo con Collider2D: quieto, pedalear,
+saltar y aterrizar. Ajusta Capas Suelo a la capa de tus plataformas.
+Al probar, desactiva temporalmente el personaje a pie o su lectura del
+teclado para que A/D no mueva ambos personajes. No se cambia automáticamente
+el personaje controlado y no se implementa aquí un sistema de montar/desmontar.
+
+ANIMATOR
+Parámetros: Velocidad (Float) y EnSuelo (Bool).
+Estado inicial: Reposo. Estados: Reposo, Pedalear, Saltar.
+6 transiciones sin espera ni mezcla; cada estado enlaza su clip exclusivo.
+Reposo/Pedalear se eligen por velocidad cuando EnSuelo es true.
+Saltar se activa cuando EnSuelo es false.
+Shift cambia la velocidad física; no acelera ni altera los cuadros originales.
+
+RECURSOS COMPARTIDOS
+No necesitas reutilizar ni reemplazar los scripts generales del proyecto.
+El material Sprites-Default referenciado es integrado en Unity, no un archivo
+externo ni una copia que sobrescriba tu material. Si tu proyecto utiliza un
+material personalizado, puedes asignar ese material existente al SpriteRenderer.
+Para tu propio control, desactiva LDLT_BicicletaMovimiento y actualiza los dos
+parámetros del Animator, o usa EstablecerEntrada(direccion, acelerar, saltar).
+No adjuntes SpriteCookAnimationController directamente: sus estados Idle/Walk/
+Run/Jump/Fall no son los nombres de los 3 estados de este controller.
+
+ALCANCE DE LAS COMPROBACIONES
+Se verificaron el gzip/tar, rutas, GUID, referencias locales y externas,
+24 cuadros y sus tiempos, 6 transiciones, metadatos y hashes de las imágenes.
+No se ejecutó el editor Unity 6.5 en el entorno de preparación. La prueba
+real de importación, compilación y Play debe completarse en tu Unity;
+no se presenta la revisión estructural como si fuera esa prueba.
