@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_LaDeudaDelTio/Scenes/01_Pueblo_ContinuoManual.unity
+    path: Assets/_LaDeudaDelTio/Scenes/05_Pueblo_Regreso_Hordas.unity
     guid: 53979539217ea074286c9f5959c5f176
   - enabled: 1
     path: Assets/_LaDeudaDelTio/Scenes/02_Cinematica_Cerro.unity
