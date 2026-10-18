@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17e51cf6a239429d9a977320bf388e20, type: 3}
+  m_Name: Dialogue_Chaman_DonaRosa_PROVISIONAL
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speakerName: "Cham\xE1n"
+    text: "Do\xF1a Rosa, \xBFpuede escucharme? Esta conversaci\xF3n es una prueba
+      provisional del sistema de di\xE1logos."
+    leftPortrait: {fileID: 91569026638618976, guid: cee64c11a6e9cd049bc5bc3d1693409c, type: 3}
+    rightPortrait: {fileID: 2055983830258549882, guid: 6e4a964da39053d43a6f15aa12b23093, type: 3}
+  - speakerName: "Do\xF1a Rosa"
+    text: Te escucho. Estas palabras solo sirven para probar la interfaz; no pertenecen
+      al guion oficial.
+    leftPortrait: {fileID: 91569026638618976, guid: cee64c11a6e9cd049bc5bc3d1693409c, type: 3}
+    rightPortrait: {fileID: 2055983830258549882, guid: 6e4a964da39053d43a6f15aa12b23093, type: 3}
+  - speakerName: "Cham\xE1n"
+    text: Mientras aparece el texto, pulsa Espacio para completar la frase. Vuelve
+      a pulsarlo para continuar.
+    leftPortrait: {fileID: 91569026638618976, guid: cee64c11a6e9cd049bc5bc3d1693409c, type: 3}
+    rightPortrait: {fileID: 2055983830258549882, guid: 6e4a964da39053d43a6f15aa12b23093, type: 3}
+  - speakerName: "Do\xF1a Rosa"
+    text: "La prueba termina aqu\xED. Pulsa Espacio cuando hayas le\xEDdo esta frase
+      y la pantalla de conversaci\xF3n desaparecer\xE1."
+    leftPortrait: {fileID: 91569026638618976, guid: cee64c11a6e9cd049bc5bc3d1693409c, type: 3}
+    rightPortrait: {fileID: 2055983830258549882, guid: 6e4a964da39053d43a6f15aa12b23093, type: 3}

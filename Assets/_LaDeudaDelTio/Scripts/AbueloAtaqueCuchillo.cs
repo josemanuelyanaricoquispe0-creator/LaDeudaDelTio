@@ -18,7 +18,10 @@ public class AbueloAtaqueCuchillo : MonoBehaviour
     private SpriteCookPlayerMovement movimiento;
     private SpriteCookAnimationController animacionesSpriteCook;
     private Rigidbody2D cuerpo;
+    private PlayerControlLock controlLock;
+    private bool movimientoEstabaHabilitado;
     private bool atacando;
+    public bool IsAttacking => atacando;
     private float finAtaque;
     private const string EstadoAtaque = "Base Layer.Attack";
 
@@ -28,12 +31,16 @@ public class AbueloAtaqueCuchillo : MonoBehaviour
         movimiento = GetComponent<SpriteCookPlayerMovement>();
         animacionesSpriteCook = GetComponent<SpriteCookAnimationController>();
         cuerpo = GetComponent<Rigidbody2D>();
+        controlLock = GetComponent<PlayerControlLock>();
     }
 
     private void Update()
     {
         if (!atacando)
         {
+            if ((controlLock != null && controlLock.BlocksInput) ||
+                (movimiento != null && !movimiento.isActiveAndEnabled))
+                return;
             if (cuchilloDesbloqueado && PulsaronJ())
             {
                 IniciarAtaque();
@@ -60,8 +67,13 @@ public class AbueloAtaqueCuchillo : MonoBehaviour
 
         // El controlador de movimiento de SpriteCook cambia a Idle/Walk/Run
         // en cada Update. Se suspende SOLO durante la cuchillada.
-        if (movimiento != null)
+        if (controlLock != null)
         {
+            controlLock.Acquire(this);
+        }
+        else if (movimiento != null)
+        {
+            movimientoEstabaHabilitado = movimiento.enabled;
             movimiento.enabled = false;
         }
 
@@ -108,9 +120,13 @@ public class AbueloAtaqueCuchillo : MonoBehaviour
             animator.Play("Base Layer.Idle", 0, 0f);
         }
 
-        if (movimiento != null)
+        if (controlLock != null)
         {
-            movimiento.enabled = true;
+            controlLock.Release(this);
+        }
+        else if (movimiento != null)
+        {
+            movimiento.enabled = movimientoEstabaHabilitado;
         }
     }
 
