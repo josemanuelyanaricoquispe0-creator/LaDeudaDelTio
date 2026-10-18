@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17e51cf6a239429d9a977320bf388e20, type: 3}
+  m_Name: Dialogue_HabitanteMisterioso_PROVISIONAL
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speakerName: "Habitante misterioso"
+    text: "Tata... ¿finalmente consiguió salvar a la niña?"
+    leftPortrait: {fileID: 91569026638618976, guid: cee64c11a6e9cd049bc5bc3d1693409c, type: 3}
+    rightPortrait: {fileID: 8644549300909704856, guid: 2ef71123d38d046479203880d5deb6be, type: 3}
+  - speakerName: "Chamán"
+    text: "¿Disculpe?"
+    leftPortrait: {fileID: 91569026638618976, guid: cee64c11a6e9cd049bc5bc3d1693409c, type: 3}
+    rightPortrait: {fileID: 8644549300909704856, guid: 2ef71123d38d046479203880d5deb6be, type: 3}
+  - speakerName: "Habitante misterioso"
+    text: "¿Ya pudo traerla de regreso?"
+    leftPortrait: {fileID: 91569026638618976, guid: cee64c11a6e9cd049bc5bc3d1693409c, type: 3}
+    rightPortrait: {fileID: 8644549300909704856, guid: 2ef71123d38d046479203880d5deb6be, type: 3}
+  - speakerName: "Chamán"
+    text: "¿Cómo sabe usted lo de mi nieta?"
+    leftPortrait: {fileID: 91569026638618976, guid: cee64c11a6e9cd049bc5bc3d1693409c, type: 3}
+    rightPortrait: {fileID: 8644549300909704856, guid: 2ef71123d38d046479203880d5deb6be, type: 3}
+  - speakerName: "Habitante misterioso"
+    text: "¿De qué me está hablando?"
+    leftPortrait: {fileID: 91569026638618976, guid: cee64c11a6e9cd049bc5bc3d1693409c, type: 3}
+    rightPortrait: {fileID: 8644549300909704856, guid: 2ef71123d38d046479203880d5deb6be, type: 3}
+  - speakerName: "Chamán"
+    text: "Acaba de preguntarme por ella... mi nieta sigue en casa, con su madre."
+    leftPortrait: {fileID: 91569026638618976, guid: cee64c11a6e9cd049bc5bc3d1693409c, type: 3}
+    rightPortrait: {fileID: 8644549300909704856, guid: 2ef71123d38d046479203880d5deb6be, type: 3}
+  - speakerName: "Habitante misterioso"
+    text: "No, Tata. Yo no le he preguntado nada de eso."
+    leftPortrait: {fileID: 91569026638618976, guid: cee64c11a6e9cd049bc5bc3d1693409c, type: 3}
+    rightPortrait: {fileID: 8644549300909704856, guid: 2ef71123d38d046479203880d5deb6be, type: 3}
+  - speakerName: "Chamán"
+    text: "Pero si fue usted quien..."
+    leftPortrait: {fileID: 91569026638618976, guid: cee64c11a6e9cd049bc5bc3d1693409c, type: 3}
+    rightPortrait: {fileID: 8644549300909704856, guid: 2ef71123d38d046479203880d5deb6be, type: 3}
+  - speakerName: "Habitante misterioso"
+    text: "Debe haberse confundido. Buenas noches."
+    leftPortrait: {fileID: 91569026638618976, guid: cee64c11a6e9cd049bc5bc3d1693409c, type: 3}
+    rightPortrait: {fileID: 8644549300909704856, guid: 2ef71123d38d046479203880d5deb6be, type: 3}

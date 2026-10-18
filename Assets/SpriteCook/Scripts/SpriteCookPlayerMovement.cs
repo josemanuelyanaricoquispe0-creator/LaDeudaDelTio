@@ -19,6 +19,7 @@ public class SpriteCookPlayerMovement : MonoBehaviour
     private Collider2D cachedCollider;
     private SpriteRenderer cachedRenderer;
     private SpriteCookAnimationController animationController;
+    private PlayerControlLock controlLock;
 
     private float horizontalInput;
     private bool jumpQueued;
@@ -30,10 +31,37 @@ public class SpriteCookPlayerMovement : MonoBehaviour
         cachedCollider = GetComponent<Collider2D>();
         cachedRenderer = GetComponent<SpriteRenderer>();
         animationController = GetComponent<SpriteCookAnimationController>();
+        controlLock = GetComponent<PlayerControlLock>();
+    }
+
+    private void OnEnable()
+    {
+        if (controlLock != null)
+            controlLock.StateChanged += ClearPendingInput;
+        ClearPendingInput();
+    }
+
+    private void OnDisable()
+    {
+        if (controlLock != null)
+            controlLock.StateChanged -= ClearPendingInput;
+        ClearPendingInput();
+    }
+
+    public void ClearPendingInput()
+    {
+        horizontalInput = 0f;
+        jumpQueued = false;
+        sprintHeld = false;
     }
 
     private void Update()
     {
+        if (controlLock != null && controlLock.BlocksInput)
+        {
+            ClearPendingInput();
+            return;
+        }
         ReadInput();
         UpdateFacing();
         UpdateAnimationState();
@@ -41,6 +69,11 @@ public class SpriteCookPlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (controlLock != null && controlLock.BlocksInput)
+        {
+            ClearPendingInput();
+            return;
+        }
         ApplyMovement();
         ApplyJump();
     }

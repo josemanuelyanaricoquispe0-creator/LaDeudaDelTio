@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17e51cf6a239429d9a977320bf388e20, type: 3}
+  m_Name: Dialogue_Minero_PROVISIONAL
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speakerName: "Chamán"
+    text: "Me dijeron que usted trabajó en la mina. Necesito saber qué pasa allá."
+    leftPortrait: {fileID: 91569026638618976, guid: cee64c11a6e9cd049bc5bc3d1693409c, type: 3}
+    rightPortrait: {fileID: 9165823176763188832, guid: 3d07e5f0863c00a45b26fe141971053d, type: 3}
+  - speakerName: "Minero anciano"
+    text: "Trabajé muchos años, compadre... hay cosas que todavía no puedo explicar."
+    leftPortrait: {fileID: 91569026638618976, guid: cee64c11a6e9cd049bc5bc3d1693409c, type: 3}
+    rightPortrait: {fileID: 9165823176763188832, guid: 3d07e5f0863c00a45b26fe141971053d, type: 3}
+  - speakerName: "Minero anciano"
+    text: "Hay galerías que fueron abandonadas hace muchos años."
+    leftPortrait: {fileID: 91569026638618976, guid: cee64c11a6e9cd049bc5bc3d1693409c, type: 3}
+    rightPortrait: {fileID: 9165823176763188832, guid: 3d07e5f0863c00a45b26fe141971053d, type: 3}
+  - speakerName: "Chamán"
+    text: "¿Por qué?"
+    leftPortrait: {fileID: 91569026638618976, guid: cee64c11a6e9cd049bc5bc3d1693409c, type: 3}
+    rightPortrait: {fileID: 9165823176763188832, guid: 3d07e5f0863c00a45b26fe141971053d, type: 3}
+  - speakerName: "Minero anciano"
+    text: "Porque algunos trabajadores escuchaban voces desde túneles donde no había nadie."
+    leftPortrait: {fileID: 91569026638618976, guid: cee64c11a6e9cd049bc5bc3d1693409c, type: 3}
+    rightPortrait: {fileID: 9165823176763188832, guid: 3d07e5f0863c00a45b26fe141971053d, type: 3}
+  - speakerName: "Minero anciano"
+    text: "Y otros desaparecieron sin dejar rastro."
+    leftPortrait: {fileID: 91569026638618976, guid: cee64c11a6e9cd049bc5bc3d1693409c, type: 3}
+    rightPortrait: {fileID: 9165823176763188832, guid: 3d07e5f0863c00a45b26fe141971053d, type: 3}
+  - speakerName: "Chamán"
+    text: "¿Nadie volvió a saber de ellos?"
+    leftPortrait: {fileID: 91569026638618976, guid: cee64c11a6e9cd049bc5bc3d1693409c, type: 3}
+    rightPortrait: {fileID: 9165823176763188832, guid: 3d07e5f0863c00a45b26fe141971053d, type: 3}
+  - speakerName: "Minero anciano"
+    text: "No. Todavía recuerdo sus nombres... y a sus familias esperando."
+    leftPortrait: {fileID: 91569026638618976, guid: cee64c11a6e9cd049bc5bc3d1693409c, type: 3}
+    rightPortrait: {fileID: 9165823176763188832, guid: 3d07e5f0863c00a45b26fe141971053d, type: 3}
