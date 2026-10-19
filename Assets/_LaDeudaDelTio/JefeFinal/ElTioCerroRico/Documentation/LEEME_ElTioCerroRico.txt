@@ -1,0 +1,120 @@
+LA DEUDA DEL TÍO — EL TÍO DEL CERRO RICO
+Preparado para Unity 6.5 (6000.5.5f1).
+
+IMPORTAR
+Unity > Assets > Import Package > Custom Package.
+Selecciona LDLT_ElTioCerroRico_Unity6_5_SEGURO.unitypackage e importa todo.
+Carpeta: Assets/_LaDeudaDelTio/JefeFinal/ElTioCerroRico/
+Prefab: Prefabs/LDLT_ElTioCerroRico.prefab.
+Arrástralo manualmente a una escena de prueba cuando quieras verificarlo.
+No se incluye ninguna escena ni se coloca el jefe automáticamente.
+
+RECURSOS
+Animations/LDLT_ElTio_Reposo.anim
+Animations/LDLT_ElTio_Invocar.anim
+Animations/LDLT_ElTio_Muerte.anim
+Controllers/LDLT_ElTioCerroRico.controller
+Prefabs/LDLT_ElTioCerroRico.prefab
+Textures/LDLT_ElTio_Reposo.png
+Textures/LDLT_ElTio_Invocar.png
+Textures/LDLT_ElTio_Muerte.png
+Documentation/LEEME_ElTioCerroRico.txt
+
+ORIGEN Y PREPARACIÓN
+Se trabajó sobre una copia de Diablo.unitypackage. El original permanece intacto.
+El original trae 3 PNG, 4 JSON, 7 scripts genéricos, 1 preset y 8 carpetas.
+No trae clips .anim, controllers, prefabs ni escenas ya generados.
+Tampoco trae cortes de sprites ni sus identificadores locales en los .meta.
+Los recursos finales se crearon a partir de los PNG y descriptores originales,
+sin inventar animaciones ni reutilizar los generadores de SpriteCook.
+
+CORRESPONDENCIA Y TIEMPOS
+diablo_idle.png -> LDLT_ElTio_Reposo.png / .anim
+  8 cuadros, 8 FPS, 1 segundo, bucle; estado inicial Reposo.
+diablo_attack.png -> LDLT_ElTio_Invocar.png / .anim
+  8 cuadros, 8 FPS, 1 segundo, sin bucle; estado Invocar.
+diablo_death.png -> LDLT_ElTio_Muerte.png / .anim
+  12 cuadros, 8 FPS, 1,5 segundos, sin bucle; estado Muerte.
+Se conservan los 28 cuadros, su orden izquierda-derecha y las claves t=índice/8.
+Se reserva 1/8 de segundo al último cuadro de cada clip.
+No había clips serializados originales cuya duración se pudiera comparar;
+se usaron el número de cuadros y los FPS declarados por SpriteCook.
+
+TEXTURAS
+Los tres PNG son idénticos byte por byte a los originales, con transparencia.
+Cada corte utiliza el cuadro completo de 640 x 640: no se recorta el personaje.
+Pivote inferior central (0,5; 0), según los JSON y el importador original.
+100 píxeles por unidad; filtro Point, sin mipmaps ni compresión, malla Full Rect.
+Importación Sprite Multiple con nombres únicos e IDs locales explícitos.
+Max Size se cambió de 2048 a 8192 para conservar las hojas de 5120 y 7680 píxeles.
+No se redimensionaron ni retocaron los PNG.
+
+PREFAB
+Solo Transform, SpriteRenderer y Animator. Escala (1,1,1), rotación cero.
+Sprite inicial: LDLT_ElTio_Reposo_00; color blanco opaco, sin volteos.
+Material incorporado de Unity: Sprites-Default.
+Sorting Layer Default, Order in Layer 0; ajustables al integrarlo en la escena.
+Animator activo, velocidad de los estados 1, sin Root Motion.
+No tiene físicas, controles, colliders, movimiento ni salto.
+
+ANIMATOR
+Controller LDLT_ElTioCerroRico, capa Base Layer.
+Exactamente tres estados: Reposo, Invocar y Muerte.
+Reposo se inicia automáticamente y se repite.
+Invocar se solicita por código; al llegar a su final vuelve a Reposo.
+Su única transición es Invocar -> Reposo: Exit Time 1, duración 0,
+sin condiciones ni mezcla entre sprites.
+Muerte solo se solicita por código: no tiene transiciones de entrada automáticas
+ni de salida. No se repite y conserva la última pose mientras siga activo.
+No se añadieron parámetros, triggers, Animation Events ni StateMachineBehaviours.
+
+INTEGRACIÓN FUTURA (SOLO EJEMPLOS, NO SON SCRIPTS INCLUIDOS)
+En el futuro script del jefe, usando su Animator:
+animator.Play("Base Layer.Invocar", 0, 0f);
+El regreso a Reposo es automático al finalizar Invocar.
+Para derrotarlo:
+animator.Play("Base Layer.Muerte", 0, 0f);
+Después de ordenar Muerte, el futuro sistema del jefe debe dejar de ordenar
+Invocar o Reposo; una llamada explícita a Play puede cambiar cualquier estado.
+No se implementó temporizador de cinco segundos, generación de Kari Kari,
+altares, combate, vida ni lógica de muerte del jefe.
+Referencia API:
+https://docs.unity.com/en-us/engine/6000.5/script-reference/unityengine/animator/play
+
+ASPECTO VISUAL ORIGINAL
+El personaje permanece sentado en las tres secuencias, con el trono incluido.
+La secuencia diablo_attack contiene un movimiento hacia delante del tridente;
+se conservó exactamente y se asignó a Invocar. No se transformó el dibujo
+en un nuevo gesto mágico ni se añadieron Kari Kari o impactos.
+Los movimientos y variaciones de la ilustración original se conservan.
+El empaquetado no añade efectos ni cambia el brillo dibujado de ojos o tridente.
+
+INDEPENDENCIA
+Todos los recursos incluidos tienen GUID nuevos, distintos de los originales.
+No se incluyen archivos dentro de Assets/SpriteCook ni sus scripts o presets.
+También se excluye character_export.spritecook.json: el generador original
+puede escribir Character.controller, Player.prefab y escenas de demostración.
+Los datos necesarios de los JSON ya están aplicados a los .meta y .anim.
+No necesita reutilizar scripts del Abuelo, Bicicleta, Qati Qati ni Kari Kari.
+No se incluyen META de Assets, _LaDeudaDelTio ni JefeFinal, para conservar
+las carpetas superiores que ya existan. Unity las crea si faltan.
+El original y el proyecto principal no fueron modificados.
+
+VALIDACIÓN REAL Y PRUEBA PENDIENTE
+Se revisaron contenedor gzip/TAR, rutas, META, GUID, IDs locales, referencias,
+curvas, cuadros, bucles, transición de regreso y componentes del prefab.
+Los PNG finales se compararon con los originales por bytes y SHA-256.
+Se inspeccionaron visualmente las hojas originales y cuadros de ataque/muerte.
+No hay Unity Editor disponible aquí: NO se importó ni ejecutó en Unity 6.5.
+La revisión estática no sustituye la validación en el motor.
+No se recibió el proyecto principal; no se puede certificar su compatibilidad
+completa sin revisar sus ajustes y scripts. El informe indica estas limitaciones.
+
+PRUEBA RECOMENDADA EN UNITY 6000.5.5f1
+1. Importar en un proyecto de prueba y revisar la consola.
+2. Comprobar los 8/8/12 cortes y las tres animaciones en Animation.
+3. Abrir el prefab y comprobar SpriteRenderer y Animator sin referencias Missing.
+4. Colocarlo delante de la cámara y observar Reposo en Play Mode.
+5. Solicitar Invocar desde código y comprobar que vuelve a Reposo.
+6. Solicitar Muerte, esperar más de 1,5 s y comprobar que mantiene la pose final.
+No se incluye un script de prueba para evitar añadir componentes innecesarios.

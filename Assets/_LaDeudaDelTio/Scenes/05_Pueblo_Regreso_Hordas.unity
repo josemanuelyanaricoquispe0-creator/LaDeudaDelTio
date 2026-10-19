@@ -138,6 +138,68 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AbueloAtaqueCuchillo
   cuchilloDesbloqueado: 1
   duracionSiNoHayClip: 0.7
+  velocidadAtaque: 2.11
+--- !u!1 &230709185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 230709187}
+  - component: {fileID: 230709186}
+  m_Layer: 0
+  m_Name: LDLT_SpawnerKariKari
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &230709186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230709185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a320a35b6b7bd442821c6480385276d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LDLT_SpawnerKariKari
+  prefabKariKari: {fileID: 8405747318572536270, guid: 6eb15cec8ca343a38a730bc1c1af8c6c, type: 3}
+  abuelo: {fileID: 902311905}
+  camaraJuego: {fileID: 519420031}
+  totalAparecer: 6
+  maximoSimultaneos: 10
+  segundosEntreApariciones: 2
+  direccionAvance: -1
+  metrosEntreApariciones: 3.5
+  distanciaMinima: 6
+  distanciaMaxima: 35
+  margenFueraCamara: 2
+  capasSuelo:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  alturaRaycast: 6
+  longitudRaycast: 20
+  margenEncimaSuelo: 0.05
+--- !u!4 &230709187
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230709185}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 101.61, y: -2.07, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &248297688
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,6 +772,56 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.96, y: -1.23, z: 0}
   m_LocalScale: {x: 0.30009586, y: 0.2779602, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &513439594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 513439596}
+  - component: {fileID: 513439595}
+  m_Layer: 0
+  m_Name: LDLT_EntradaBarrioMineros
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &513439595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513439594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dae14ef5e1f6d4282d957d312a1e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LDLT_EntradaBarrioMineros
+  spawner: {fileID: 230709186}
+  abuelo: {fileID: 902311905}
+  escenaDestino: 06_BarrioDeMineros
+  radioActivacion: 2.5
+  mostrarContador: 1
+  mostrarMensajeCercaDeMina: 1
+--- !u!4 &513439596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513439594}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 105.68, y: -1.89, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1404,12 +1516,50 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4836212697570818870, guid: e51db0f6227ef7149936e3d4856aaecb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2253284}
+    - targetCorrespondingSourceObject: {fileID: 4836212697570818870, guid: e51db0f6227ef7149936e3d4856aaecb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 902311912}
+    - targetCorrespondingSourceObject: {fileID: 4836212697570818870, guid: e51db0f6227ef7149936e3d4856aaecb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 902311913}
   m_SourcePrefab: {fileID: 100100000, guid: e51db0f6227ef7149936e3d4856aaecb, type: 3}
 --- !u!4 &902311905 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7172872395032923758, guid: e51db0f6227ef7149936e3d4856aaecb, type: 3}
   m_PrefabInstance: {fileID: 902311904}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &902311912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2253276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7961bf308b5ce0745a79a396e5abab92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LDLT_VidaAbuelo
+  corazonesMaximos: 5
+  segundosPorCorazon: 10
+  invulnerabilidad: 1
+  mostrarHUD: 1
+--- !u!114 &902311913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2253276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5590e8f40faa66e44aab899fe844d2f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LDLT_GolpeCuchilloKari
+  distanciaAdelante: 1.05
+  altura: 0.4
+  radio: 0.95
+  demoraGolpe: 0.055
 --- !u!1 &922482156
 GameObject:
   m_ObjectHideFlags: 0
@@ -2811,3 +2961,5 @@ SceneRoots:
   - {fileID: 303870862}
   - {fileID: 1402415665}
   - {fileID: 1585146506}
+  - {fileID: 230709187}
+  - {fileID: 513439596}
