@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_LaDeudaDelTio/Scenes/MenuPrincipal.unity
+    guid: 02a2782fba888e04fac4f4b000504975
+  - enabled: 1
+    path: Assets/_LaDeudaDelTio/Scenes/SeleccionCapitulos.unity
+    guid: c57a16142034c8a4687ad761e791d3d1
+  - enabled: 1
     path: Assets/_LaDeudaDelTio/Scenes/00_Cinematica_Introduccion.unity
     guid: 417f725790dcdf14fa2acfc3d17e576e
   - enabled: 1
@@ -24,6 +30,9 @@ EditorBuildSettings:
     path: Assets/_LaDeudaDelTio/Scenes/05_Pueblo_Regreso_Hordas.unity
     guid: 53979539217ea074286c9f5959c5f176
   - enabled: 1
+    path: Assets/_LaDeudaDelTio/Scenes/06_BarrioDeMineros.unity
+    guid: e2673a8f0fb3ede4a84c1d67bd6a7f81
+  - enabled: 1
     path: Assets/_LaDeudaDelTio/Scenes/07_Cinematica_SecretoDiablo.unity
     guid: 0e095f73220be644a9b8511b36751f0e
   - enabled: 1
@@ -32,13 +41,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_LaDeudaDelTio/Scenes/09_Cinematica_RescateFinal.unity
     guid: 93378417cadd664459b9cfef7a51d6a8
-  - enabled: 1
-    path: Assets/_LaDeudaDelTio/Scenes/06_BarrioDeMineros.unity
-    guid: e2673a8f0fb3ede4a84c1d67bd6a7f81
-  - enabled: 1
-    path: Assets/_LaDeudaDelTio/Scenes/SeleccionCapitulos.unity
-    guid: c57a16142034c8a4687ad761e791d3d1
-  - enabled: 1
-    path: Assets/_LaDeudaDelTio/Scenes/MenuPrincipal.unity
-    guid: 02a2782fba888e04fac4f4b000504975
   m_configObjects: {}
