@@ -32,4 +32,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_LaDeudaDelTio/Scenes/09_Cinematica_RescateFinal.unity
     guid: 93378417cadd664459b9cfef7a51d6a8
+  - enabled: 1
+    path: Assets/_LaDeudaDelTio/Scenes/06_BarrioDeMineros.unity
+    guid: e2673a8f0fb3ede4a84c1d67bd6a7f81
+  - enabled: 1
+    path: Assets/_LaDeudaDelTio/Scenes/SeleccionCapitulos.unity
+    guid: c57a16142034c8a4687ad761e791d3d1
+  - enabled: 1
+    path: Assets/_LaDeudaDelTio/Scenes/MenuPrincipal.unity
+    guid: 02a2782fba888e04fac4f4b000504975
   m_configObjects: {}

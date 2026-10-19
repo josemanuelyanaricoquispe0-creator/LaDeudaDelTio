@@ -3000,7 +3000,7 @@ MonoBehaviour:
   controladorMovimiento: {fileID: 0}
   duracionFundido: 1.8
   pausaAntesDelMensaje: 0.3
-  escenaSiguiente: 
+  escenaSiguiente: 04_Cinematica_EncuentroHija
 --- !u!61 &1882076767
 BoxCollider2D:
   m_ObjectHideFlags: 0
