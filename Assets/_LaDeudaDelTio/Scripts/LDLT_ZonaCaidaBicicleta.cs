@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
+// Prueba Final
 // Colocar en un objeto con Box Collider 2D configurado como Is Trigger.
 // Ubicar el objeto debajo de un hueco de la carretera.
 public class LDLT_ZonaCaidaBicicleta : MonoBehaviour
