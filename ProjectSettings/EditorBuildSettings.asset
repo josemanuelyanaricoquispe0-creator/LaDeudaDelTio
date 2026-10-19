@@ -1,3 +1,4 @@
+
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1045 &1
@@ -6,17 +7,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_LaDeudaDelTio/Scenes/05_Pueblo_Regreso_Hordas.unity
-    guid: 53979539217ea074286c9f5959c5f176
+    path: Assets/_LaDeudaDelTio/Scenes/MenuPrincipal.unity
+    guid: 02a2782fba888e04fac4f4b000504975
   - enabled: 1
-    path: Assets/_LaDeudaDelTio/Scenes/02_Cinematica_Cerro.unity
-    guid: cc631ff05dbee074b84387d2de77d812
-  - enabled: 1
-    path: Assets/_LaDeudaDelTio/Scenes/03_PersecucionBicicleta.unity
-    guid: 6026734a52c0a7a4a8edb8756c46ce78
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/_LaDeudaDelTio/Scenes/SeleccionCapitulos.unity
+    guid: c57a16142034c8a4687ad761e791d3d1
   - enabled: 1
     path: Assets/_LaDeudaDelTio/Scenes/00_Cinematica_Introduccion.unity
     guid: 417f725790dcdf14fa2acfc3d17e576e
@@ -24,8 +19,17 @@ EditorBuildSettings:
     path: Assets/_LaDeudaDelTio/Scenes/01_Pueblo_Dialogos_Integracion.unity
     guid: 6238530d08a6e084a9922117f964e384
   - enabled: 1
+    path: Assets/_LaDeudaDelTio/Scenes/02_Cinematica_Cerro.unity
+    guid: cc631ff05dbee074b84387d2de77d812
+  - enabled: 1
+    path: Assets/_LaDeudaDelTio/Scenes/03_PersecucionBicicleta.unity
+    guid: 6026734a52c0a7a4a8edb8756c46ce78
+  - enabled: 1
     path: Assets/_LaDeudaDelTio/Scenes/04_Cinematica_EncuentroHija.unity
     guid: f70ff9c888207ae48bddc007d08e8b60
+  - enabled: 1
+    path: Assets/_LaDeudaDelTio/Scenes/05_Pueblo_Regreso_Hordas.unity
+    guid: 53979539217ea074286c9f5959c5f176
   - enabled: 1
     path: Assets/_LaDeudaDelTio/Scenes/06_BarrioDeMineros.unity
     guid: e2673a8f0fb3ede4a84c1d67bd6a7f81
@@ -41,5 +45,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_LaDeudaDelTio/Scenes/PantallaCarga.unity
     guid: 44f00a50a5d40334595fd96585f7e3de
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
