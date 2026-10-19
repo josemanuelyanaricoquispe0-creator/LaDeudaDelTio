@@ -1,0 +1,123 @@
+LA DEUDA DEL TÍO — ALTAR DE OFRENDAS
+Paquete preparado para Unity 6.5 (6000.5.5f1).
+
+IMPORTACIÓN
+Unity > Assets > Import Package > Custom Package.
+Selecciona LDLT_AltarTio_Unity6_5_SEGURO.unitypackage e importa todo.
+Carpeta: Assets/_LaDeudaDelTio/JefeFinal/Altares/AltarTio/
+Prefab: Prefabs/LDLT_AltarTio.prefab.
+No se incluye ni se modifica ninguna escena.
+
+CONTENIDO
+Animations/LDLT_AltarTio_Reposo.anim
+Animations/LDLT_AltarTio_Danio.anim
+Animations/LDLT_AltarTio_Destruccion.anim
+Controllers/LDLT_AltarTio.controller
+Prefabs/LDLT_AltarTio.prefab
+Textures/LDLT_AltarTio_Reposo.png
+Textures/LDLT_AltarTio_Danio.png
+Textures/LDLT_AltarTio_Destruccion.png
+Documentation/LEEME_AltarTio.txt
+
+ANÁLISIS DEL ORIGINAL
+Se trabajó sobre una copia de altar.unitypackage; el original sigue intacto.
+Contiene 3 PNG, 4 JSON, 7 scripts genéricos, 1 preset y 8 carpetas con META.
+No incluye clips .anim, controllers, prefabs ni escenas ya generados.
+Las texturas no tienen cortes ni identificadores locales de sub-sprites.
+Los recursos finales se construyeron con los cuadros y descriptores originales.
+Los scripts coinciden byte por byte con los de SpriteCook ya revisados en
+el paquete Diablo; se verificaron sus dependencias antes de excluirlos.
+El generador puede escribir Character.controller, Player.prefab y escenas
+de demostración, además de añadir movimiento y físicas innecesarios al altar.
+Por eso no se incluye ningún script, preset ni JSON que active esos generadores.
+
+MAPEO
+altar_idle.png -> LDLT_AltarTio_Reposo.png / .anim
+  8 cuadros, 8 FPS, 1 segundo, bucle.
+altar_hurt.png -> LDLT_AltarTio_Danio.png / .anim
+  8 cuadros, 8 FPS, 1 segundo, sin bucle.
+altar_death.png -> LDLT_AltarTio_Destruccion.png / .anim
+  12 cuadros, 8 FPS, 1,5 segundos, sin bucle.
+Orden izquierda-derecha y claves t=índice/8. El último cuadro dura también 1/8 s.
+No había clips serializados originales para comparar su duración en Unity;
+se usaron el número de cuadros y los FPS declarados por SpriteCook.
+
+TEXTURAS Y SPRITES
+Los tres PNG son idénticos byte por byte al original, incluida la transparencia.
+28 cortes completos de 640 x 640; sin redibujar, deformar ni recortar el altar.
+Pivote inferior central (0,5; 0), según los JSON y el importador original.
+100 PPU, malla Full Rect, filtro Point, sin mipmaps ni compresión.
+Sprite Multiple; nombres exclusivos e IDs locales explícitos y enlazados.
+Max Size se elevó de 2048 a 8192 para no reducir las hojas de 5120/7680 píxeles.
+No se redimensionaron los archivos PNG.
+
+PREFAB Y CONTROLLER
+LDLT_AltarTio contiene solo Transform, SpriteRenderer y Animator.
+Escala (1,1,1), rotación cero, sprite inicial Reposo_00, sin volteos.
+Color blanco opaco, material Sprites-Default incorporado en Unity.
+Sorting Layer Default, Order in Layer 0: ajustables cuando se integre en la escena.
+Sin Root Motion, físicas, colliders, controles ni scripts.
+Controller exclusivo LDLT_AltarTio, capa Base Layer y tres estados:
+- Reposo: estado inicial, bucle.
+- Danio: una reproducción; retorna automáticamente a Reposo al terminar.
+- Destruccion: una reproducción; conserva el último cuadro mientras siga activo.
+Única transición: Danio -> Reposo, Exit Time 1, duración 0, sin condiciones.
+No hay transición automática hacia Destruccion ni salidas desde Destruccion.
+No hay triggers, parámetros, eventos ni StateMachineBehaviours.
+
+DOS INSTANCIAS DEL MISMO PREFAB
+Cuando lo integres, arrastra el prefab dos veces y nombra las instancias:
+LDLT_AltarTio_Izquierdo
+LDLT_AltarTio_Derecho
+Ambas reutilizan estos recursos del altar, pero cada GameObject tiene su propio
+Animator y estado de reproducción. No hace falta duplicar el controller.
+El sistema futuro deberá dirigirse al Animator de la instancia golpeada.
+No se crearon esas instancias ni se modificó 08_Mina_JefeFinal.
+
+LLAMADAS PARA LA INTEGRACIÓN FUTURA (NO SON SCRIPTS INCLUIDOS)
+Para recibir daño, usando el Animator de ese altar:
+animator.Play("Base Layer.Danio", 0, 0f);
+Regresará a Reposo al completar la animación.
+Para destruir ese altar:
+animator.Play("Base Layer.Destruccion", 0, 0f);
+Después de destruirlo, el futuro script debe ignorar golpes y no ordenar
+Reposo ni Danio: una llamada explícita a Play puede cambiar cualquier estado.
+No se implementaron los tres cuchillazos, vida, spawners ni la muerte del Tío.
+Referencia oficial de la API:
+https://docs.unity.com/en-us/engine/6000.5/script-reference/unityengine/animator/play
+
+LIMITACIÓN VISUAL DEL ORIGINAL
+La secuencia altar_death no reduce por completo el altar a escombros.
+En su último cuadro permanece la mesa y la calavera todavía presenta brillo.
+Se conservó exactamente esa ilustración como Destruccion; el empaquetado
+no puede convertirla en otra imagen sin incumplir la conservación visual.
+No se añadieron el abuelo, cuchillos ni efectos nuevos a ninguna secuencia.
+
+INDEPENDENCIA E IDENTIFICADORES
+Se asignaron GUID nuevos a esta copia independiente para que no reutilice la
+identidad de recursos del original que pudieran estar importados previamente.
+Todas las referencias afectadas se actualizaron. El archivo original no cambió.
+Los IDs locales se crearon porque el original no tenía sub-sprites definidos.
+No se modifica ningún GUID o recurso del Tío ni de los demás personajes.
+No hay rutas Assets/SpriteCook ni recursos compartidos empaquetados.
+Los META de Assets, _LaDeudaDelTio, JefeFinal y Altares no se incluyen:
+Unity mantiene esas carpetas si existen, o las crea si faltan.
+La única dependencia externa es Sprites-Default, incorporado en Unity.
+
+VERIFICACIÓN REAL
+Se revisaron gzip/TAR, rutas, META, GUID, IDs locales, referencias, cortes,
+cuadros, curvas, tiempos, estados, transición y componentes del prefab.
+Se compararon los PNG finales con los originales por bytes y SHA-256.
+Se inspeccionaron visualmente las hojas y el último cuadro de Destruccion.
+No hay Unity Editor disponible: no se importó ni reprodujo en Unity 6.5.
+No se recibió el proyecto principal y no se puede certificar su compatibilidad
+completa sin revisar sus ajustes y scripts. La revisión es estática.
+
+PRUEBA EN UNITY 6000.5.5f1
+1. Importa en un proyecto de prueba y revisa la consola.
+2. Comprueba 8/8/12 cortes y los tres clips.
+3. Abre el prefab: SpriteRenderer y Animator deben tener sus referencias.
+4. Coloca dos instancias delante de la cámara y comprueba Reposo en Play Mode.
+5. Solicita Danio solo a una; comprueba el retorno y que la otra siga en Reposo.
+6. Solicita Destruccion a una; espera más de 1,5 s y comprueba la pose final.
+Estas pruebas en el motor quedan pendientes; no se incluye un script de prueba.

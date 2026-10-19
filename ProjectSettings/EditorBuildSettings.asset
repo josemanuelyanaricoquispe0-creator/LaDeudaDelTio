@@ -15,10 +15,31 @@ EditorBuildSettings:
     path: Assets/_LaDeudaDelTio/Scenes/03_PersecucionBicicleta.unity
     guid: 6026734a52c0a7a4a8edb8756c46ce78
   - enabled: 0
-    path: Assets/_LaDeudaDelTio/Scenes/01_Pueblo_Armado.unity
-    guid: 7ee2e4c2976ea2541bb539945dfdbbeb
-  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/_LaDeudaDelTio/Scenes/00_Cinematica_Introduccion.unity
+    guid: 417f725790dcdf14fa2acfc3d17e576e
+  - enabled: 1
+    path: Assets/_LaDeudaDelTio/Scenes/01_Pueblo_Dialogos_Integracion.unity
+    guid: 6238530d08a6e084a9922117f964e384
+  - enabled: 1
+    path: Assets/_LaDeudaDelTio/Scenes/04_Cinematica_EncuentroHija.unity
+    guid: f70ff9c888207ae48bddc007d08e8b60
+  - enabled: 1
+    path: Assets/_LaDeudaDelTio/Scenes/06_BarrioDeMineros.unity
+    guid: e2673a8f0fb3ede4a84c1d67bd6a7f81
+  - enabled: 1
+    path: Assets/_LaDeudaDelTio/Scenes/07_Cinematica_SecretoDiablo.unity
+    guid: 0e095f73220be644a9b8511b36751f0e
+  - enabled: 1
+    path: Assets/_LaDeudaDelTio/Scenes/08_Mina_JefeFinal.unity
+    guid: c790e3c7bc12ce9438386633e6d8e599
+  - enabled: 1
+    path: Assets/_LaDeudaDelTio/Scenes/09_Cinematica_RescateFinal.unity
+    guid: 93378417cadd664459b9cfef7a51d6a8
+  - enabled: 1
+    path: Assets/_LaDeudaDelTio/Scenes/PantallaCarga.unity
+    guid: 44f00a50a5d40334595fd96585f7e3de
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

@@ -1,0 +1,90 @@
+LA DEUDA DEL TÍO — KARI KARI
+Paquete preparado para Unity 6.5 (6000.5.5f1).
+
+IMPORTACIÓN
+Assets > Import Package > Custom Package.
+Selecciona LDLT_KariKari_Unity6_5_SEGURO.unitypackage e importa todos sus recursos.
+Carpeta: Assets/_LaDeudaDelTio/Enemigos/KariKari/
+Arrastra Prefabs/LDLT_KariKari.prefab a una escena de prueba cuando quieras probarlo.
+El paquete no modifica ni añade objetos a ninguna escena.
+
+CONTENIDO
+Animations/LDLT_KariKari_Correr.anim
+Animations/LDLT_KariKari_Atacar.anim
+Controllers/LDLT_KariKari.controller
+Prefabs/LDLT_KariKari.prefab
+Textures/LDLT_KariKari_Correr.png
+Textures/LDLT_KariKari_Atacar.png
+Documentation/LEEME_KariKari.txt
+
+ANÁLISIS DEL ORIGINAL
+Se trabajó con KariKariAnimation(1).unitypackage, conservándolo sin cambios.
+El original contiene dos PNG, dos descriptores .spritecook.json, tres scripts
+Editor de SpriteCook, un preset de importación y cuatro carpetas con sus .meta.
+No contiene .anim, .controller, .prefab ni escenas ya generados.
+Las texturas originales tampoco tienen sub-sprites definidos en los .meta.
+Por eso se generaron los cortes, clips, controller y prefab a partir de los
+datos y del algoritmo del importador original; no había transiciones ni
+parámetros existentes que conservar, ni componentes de script que reutilizar.
+
+ANIMACIONES Y TEXTURAS
+Correr: 10 cuadros de 640 x 640, hoja de 6400 x 640, 8 FPS, bucle.
+Atacar: 8 cuadros de 640 x 640, hoja de 5120 x 640, 8 FPS, una reproducción.
+Orden de izquierda a derecha. Claves en t = índice / 8 segundos.
+Correr dura 1,25 s; Atacar dura 1 s. Se reserva 1/8 s al último cuadro.
+No se añadieron ni redibujaron cuadros. Ambos PNG se copiaron byte por byte.
+Pivote inferior central (0,5; 0), 100 píxeles por unidad, escala (1,1,1).
+Sprite Multiple, malla Full Rect, filtro Point, sin mipmaps ni compresión.
+Se aumentó Max Size de 2048 a 8192 para que las hojas de 5120/6400 píxeles
+no se reduzcan durante la importación. No se redimensionaron los archivos PNG.
+Los nombres e identificadores locales de los nuevos cortes se enlazan de forma
+explícita en los .meta y en los clips; el original no tenía IDs de cortes.
+
+PREFAB Y ANIMATOR
+El prefab tiene únicamente Transform, SpriteRenderer y Animator.
+Sprite inicial: cuadro 00 de Correr; color blanco opaco, sin volteos.
+Material: Sprites-Default incorporado en Unity; no requiere un material externo.
+Sorting Layer: Default; Order in Layer: 0. Se puede ajustar al integrarlo
+en una escena para que el fondo no lo tape.
+El controller tiene una capa Base Layer y dos estados: Correr y Atacar.
+Correr es el estado inicial. Velocidad de los estados: 1.
+No se añadieron parámetros, triggers, eventos ni transiciones automáticas.
+Atacar no está en bucle: queda en la última pose hasta solicitar otro estado.
+Esta decisión evita repetir ataques sin orden del futuro sistema de combate.
+
+INTEGRACIÓN POSTERIOR (EJEMPLOS, NO SON SCRIPTS INCLUIDOS)
+Para iniciar o reiniciar un ataque desde el Animator del enemigo:
+animator.Play("Base Layer.Atacar", 0, 0f);
+Para volver a correr:
+animator.Play("Base Layer.Correr", 0, 0f);
+Estas llamadas deberán conectarse más adelante al sistema de combate.
+No se ha conectado ni probado ese sistema, porque el proyecto principal
+no forma parte de este trabajo.
+Referencia oficial de la API:
+https://docs.unity.com/en-us/engine/6000.5/script-reference/unityengine/animator/play
+
+INDEPENDENCIA
+No incluye scripts C#, Rigidbody, colliders, controles, daño, IA ni hordas.
+No incluye SpriteCookImporter, SpriteCookPrefabGenerator, SpriteCookAtlasCreator,
+presets compartidos ni los JSON usados por esos generadores.
+Sus datos necesarios ya están incorporados en los .meta y .anim.
+No necesita reutilizar scripts compartidos del proyecto.
+Todos los recursos y carpetas incluidos tienen GUID nuevos.
+No se incluyen .meta de Assets, _LaDeudaDelTio ni Enemigos: Unity conserva
+las carpetas superiores existentes o las crea si no existen.
+El original y los otros paquetes no fueron modificados.
+
+VALIDACIÓN Y LÍMITES
+Se comprueban el contenedor gzip/TAR, rutas, .meta, GUID, referencias locales,
+cortes, cuadros, tiempos, estados y componentes mediante revisión estática.
+Se comparan los PNG originales y finales por sus bytes y SHA-256.
+No hay Unity Editor disponible aquí: NO se ejecutó ni se importó el paquete
+en Unity 6.5. La revisión estática no sustituye la prueba en el motor.
+No se revisaron recursos ni GUID del proyecto principal, que no fue adjuntado.
+Antes de integrarlo, en un proyecto de prueba con Unity 6000.5.5f1:
+1. Importa todo el paquete y revisa la consola.
+2. Revisa los 10/8 sprites en las texturas y los dos clips en Animation.
+3. Abre el prefab y comprueba que no haya referencias Missing.
+4. Ponlo ante la cámara y comprueba Correr en Play Mode.
+5. Prueba Atacar mediante el sistema de combate cuando lo conectes.
+El informe adjunto describe las verificaciones efectivamente ejecutadas.
